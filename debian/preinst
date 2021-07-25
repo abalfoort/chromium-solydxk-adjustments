@@ -5,12 +5,9 @@ set -e
 FLE='/etc/chromium/master_preferences'
 if [ -e "$FLE" ] && [ ! -e "$FLE.divert" ]; then
   dpkg-divert --add --rename --divert $FLE.divert $FLE
-fi
-
-FLE='/usr/share/chromium/master_preferences'
-ISDIVERTED=$(LANG=C dpkg-divert --list $FLE)
-if [ -e "$FLE" ] && [ ! -e "$FLE.divert" ]; then
-  dpkg-divert --add --rename --divert $FLE.divert $FLE
+  if [ -e "$FLE" ]; then
+      rm "$FLE"
+  fi
 fi
 
 #DEBHELPER#
