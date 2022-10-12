@@ -9,5 +9,6 @@ Standards-Version: 4.5.0
 Package: chromium-solydxk-adjustments
 Architecture: all
 Depends: ${misc:Depends}, chromium
+Recommends: webext-ublock-origin-chromium
 Description: Adjustments for Chromium
  SolydXK configuration adjustements for Chromium
