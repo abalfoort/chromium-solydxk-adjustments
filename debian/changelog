@@ -1,3 +1,12 @@
+chromium-solydxk-adjustments (2022.10.06) stable; urgency=low
+
+  * Added recommends: webext-ublock-origin-chromium
+  * Rename master-preferences to master-preferences-solydxk
+  * Symlink master-preferences to master-preferences-solydxk in postinst
+  * master-preferences-solydxk: set custom_chrome_frame: false
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 06 Oct 2022 16:11:05 +0200
+
 chromium-solydxk-adjustments (2021.06.03) stable; urgency=low
 
   * Remove pre-installing add-ons
