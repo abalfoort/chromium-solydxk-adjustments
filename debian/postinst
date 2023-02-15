@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+
+FLE='/etc/chromium/master_preferences'
+if [ -e "$FLE" ] && [ ! -e "${FLE}.divert" ]; then
+  dpkg-divert --add --rename --divert $FLE.divert $FLE
+fi
+
+if [ -f "$FLE" ]; then
+    rm -f "$FLE"
+fi
+ln -sf "${FLE}_solydxk" "$FLE"
+
+#DEBHELPER#
