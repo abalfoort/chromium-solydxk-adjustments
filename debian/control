@@ -1,7 +1,7 @@
 Source: chromium-solydxk-adjustments
 Section: web
 Priority: optional
-Maintainer: Arjen Balfoort <arjenbalfoort@hotmail.com>
+Maintainer: Arjen Balfoort <solydxk.abalfoort@tuta.com>
 Build-Depends: debhelper-compat (= 12)
 X-Python3-Version: >= 3.2
 Standards-Version: 4.5.0
