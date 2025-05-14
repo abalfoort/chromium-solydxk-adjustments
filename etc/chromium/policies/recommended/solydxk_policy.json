@@ -1,7 +1,0 @@
-{
-  "DefaultSearchProviderEnabled": true,
-  "DefaultSearchProviderSearchURL": "https://www.startpage.com/do/dsearch?query={searchTerms}",
-  "DefaultSearchProviderName": "Startpage",
-  "DefaultSearchProviderIconURL": "https://www.startpage.com/favicon.ico"
-}
-
